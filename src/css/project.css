@@ -1,0 +1,51 @@
+.project {
+    height: 20rem;
+    width: 28rem;
+    border: 2px solid #fd7e14;
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    color: #ced4da;
+}
+
+.project:hover {
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 0.5rem 0.5rem #fd7e14;
+    transition: 0.3s;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+
+.projectHeaderLeft {
+    margin-left: 1.2rem;
+}
+
+.projectHeaderRight {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.projectHeaderRight a:link, .projectHeaderRight a:visited {
+    color: #ced4da;
+    transition: 0.5s;
+}
+
+.projectHeaderRight a:hover, .projectHeaderRight a:active {
+    color: #fd7e14;
+    transition: 0.5s;
+}
+
+.projectTitle {
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.projectFooter {
+    margin-top: 1.6rem;
+    display: flex;
+    font-size: 1.2rem;
+}

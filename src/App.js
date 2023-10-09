@@ -1,14 +1,14 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Components/Home';
+import Carousel from './Components/Carousel';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Navigate to='/home'/>}/>
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </div>

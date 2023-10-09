@@ -10,7 +10,7 @@
 /* - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
-/* color: #22b8cf; */
+/* color: #212529; */
 /* color: #fd7e14; */
 /* color: #ced4da; */
 
@@ -20,6 +20,7 @@
     display: flex;
     color: #ced4da;
     font-size: 1.6rem;
+    overflow: scroll;
 }
 
 /*******************/
@@ -65,6 +66,7 @@
 .header p:nth-child(4) {
     max-width: 60rem;
     min-width: 20rem;
+    line-height: 2.8rem;
 }
 
 .sectionHeader {
@@ -72,7 +74,9 @@
     padding-bottom: 0.2rem;
     display: flex;
     flex-direction: row;
-    margin-bottom: 3.2rem;
+    margin-top: 8rem;
+    margin-bottom: 4.8rem;
+    width: 60%;
 }
 
 .sectionHeader:after {
@@ -82,6 +86,7 @@
     width: 100%;
     height: 0.2rem;
     margin-left: 2rem;
+    z-index: 0;
     background-color: #fd7e14;
 }
 
@@ -89,15 +94,92 @@
     color: #fd7e14;
 }
 
-.about {
-    height: 300rem;
-    padding-top: 10rem;
-}
-
 /*******************/
 /* ABOUT */
 /*******************/
 
+.about {
+    height: auto;
+    padding-top: 10rem;
+    margin-bottom: 3.2rem;
+}
+
+.aboutContent p {
+    width: 70%;
+    line-height: 2.8rem;
+    color: #ced4da;
+}
+
 /*******************/
 /* PROJECTS */
 /*******************/
+
+.projects {
+    margin-bottom: 3.2rem;
+}
+
+.projectsContent {
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*******************/
+/* EXPERIENCE */
+/*******************/
+
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+}
+
+.experienceContent {
+    width: 100rem;
+}
+
+/*******************/
+/* CONTACT */
+/*******************/
+
+.contact {
+    height: 20rem;
+    margin-bottom: 3.2rem;
+}
+
+.contactContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*******************/
+/* FOOTER */
+/*******************/
+
+/* sticky footer on the right 
+.footer {
+    height: 2rem;
+    display: flex;
+    width: 18rem;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+}
+*/
+
+.footer {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.6rem;
+}
+
+.credit {
+    text-decoration: none;
+    color: #ced4da;
+}
