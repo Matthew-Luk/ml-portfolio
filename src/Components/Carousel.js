@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/carousel.css'
+import uber from '../images/uber.jpg'
 import warby from '../images/warbyparker2.jpg'
 import lenscrafters from '../images/lenscrafters.JPG'
 import samsonite from '../images/samsonite.jpeg'
@@ -12,7 +13,7 @@ const Carousel = () => {
         "description": "I manage replacements and new hire asset requests, along with assisting with the asset retrieval logistics process. This involved meticulous asset management, ensuring the timely fulfillment of requests, and following up promptly with terminated users. All while adhering to strict Service Level Agreements (SLAs) and Key Performance Indicators (KPIs).",
         "position": "IT Supply Chain Technician",
         "date": "Jan 2022 - Present",
-        "picture": ""
+        "picture": uber
     }
 
     const Facebook = {
@@ -20,12 +21,12 @@ const Carousel = () => {
         "description": "As an IT Flex Technician at Facebook/Meta, I had a versatile role covering several departments. This gave me insights into each department's tasks, allowing me to offer help to meet deadlines and uphold Service Level Agreements (SLAs). I handled tasks such as setting up and troubleshooting devices, shipping assets globally, managing inventory, and supporting new hire orientation classes.",
         "position": "IT Flex Technician",
         "date": "Oct 2019 - Jan 2022",
-        "picture": ""
+        "picture": uber
     }
 
     const Warby = {
         "title": "Warby Parker",
-        "description": "Collaborated closely with optical team to provide quality service. I specialized in repairing glasses, assisting with measurements, and troubleshooting issues for customers. My role also involved handling insurance processes and managing clerical tasks like inputting data for orders.",
+        "description": "Collaborated closely with optical team to provide quality service. I specialized in repairing glasses, assisting with measurements, and troubleshooting issues for customers. My role also involved handling insurance processes and managing clerical tasks like inputting data for orders. (Couldn't find a picture of me working at Warby so my friend made an edited picture)",
         "position": "Licensed Optician",
         "date": "Mar 2019 - Oct 2019",
         "picture": warby
@@ -49,7 +50,6 @@ const Carousel = () => {
 
     const data = [Uber,Facebook,Warby,LensCrafters,Samsonite]
     const [currentIndex, setCurrentIndex] = useState(0)
-
 
     const left = () => {
         if(currentIndex < 1) {

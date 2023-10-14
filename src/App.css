@@ -3,10 +3,10 @@
   /* background-color: #0a192f; */
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 html{
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }

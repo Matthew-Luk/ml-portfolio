@@ -11,10 +11,10 @@ const Navbar = () => {
                 {/* <a href='#'><TbSquareRoundedLetterM color='#fd7e14' size={54}/></a> */}
             </div>
             <div className='navbarRight'>
-                <a href="#about" className='navbarLink atari'><span>01.</span>About</a>
-                <a href="#projects" className='navbarLink atari'><span>02.</span>Projects</a>
-                <a href="#experience" className='navbarLink atari'><span>03.</span>Experience</a>
-                <a href="#contact" className='navbarLink atari'><span>04.</span>Contact</a>
+                <a href="#about" className='navbarLink'><span>01.</span>About</a>
+                <a href="#projects" className='navbarLink'><span>02.</span>Projects</a>
+                <a href="#experience" className='navbarLink'><span>03.</span>Experience</a>
+                <a href="#contact" className='navbarLink'><span>04.</span>Contact</a>
                 <button className='button'>Resume</button>
             </div> 
         </div>

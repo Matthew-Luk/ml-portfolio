@@ -15,10 +15,6 @@
     z-index: 1;
 }
 
-.atari {
-    font-family: "Press Start 2P";
-}
-
 .navbarLeft {
     padding-left: 3.2rem;
 }
@@ -32,12 +28,14 @@
 }
 
 .navbarLink:link, .navbarLink:visited {
+    font-family: "Press Start 2P";
     text-decoration: none;
     color: #ced4da;
     transition: 0.5s;
 }
 
 .navbarLink:hover, .navbarLink:active {
+    font-family: "Press Start 2P";
     transition: 0.5s;
     color: #fd7e14;
 }
