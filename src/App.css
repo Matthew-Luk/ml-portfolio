@@ -1,12 +1,25 @@
 * {
-  background-color: #212529;
-  /* background-color: #0a192f; */
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
 
 html{
+  background-color: #212529;
   font-size: 62.5%;
   overflow-x: hidden;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  animation: fadeOut 3s linear 1 normal backwards;
 }

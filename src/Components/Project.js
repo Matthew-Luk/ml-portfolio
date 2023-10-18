@@ -6,8 +6,6 @@ import { LuExternalLink } from 'react-icons/lu';
 const Project = (props) => {
     const { projectIcon, projectGitHub, projectLink, projectTitle, projectContent, projectFooter } = props
 
-    console.log(projectFooter)
-
     const parseProjectFooter = (arr) => {
         let str = ""
         for(let i=0;i<arr.length;i++){

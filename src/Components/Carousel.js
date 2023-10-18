@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import '../css/carousel.css'
 import uber from '../images/uber.jpg'
+import facebook from '../images/facebook.jpg'
 import warby from '../images/warbyparker2.jpg'
 import lenscrafters from '../images/lenscrafters.JPG'
 import samsonite from '../images/samsonite.jpeg'
-import {BsFillCaretLeftFill} from 'react-icons/bs'
-import {BsFillCaretRightFill} from 'react-icons/bs'
+import {BsArrowLeftSquare} from 'react-icons/bs'
+import {BsArrowRightSquare} from 'react-icons/bs'
 
 const Carousel = () => {
     const Uber = {
@@ -21,12 +22,12 @@ const Carousel = () => {
         "description": "As an IT Flex Technician at Facebook/Meta, I had a versatile role covering several departments. This gave me insights into each department's tasks, allowing me to offer help to meet deadlines and uphold Service Level Agreements (SLAs). I handled tasks such as setting up and troubleshooting devices, shipping assets globally, managing inventory, and supporting new hire orientation classes.",
         "position": "IT Flex Technician",
         "date": "Oct 2019 - Jan 2022",
-        "picture": uber
+        "picture": facebook
     }
 
     const Warby = {
         "title": "Warby Parker",
-        "description": "Collaborated closely with optical team to provide quality service. I specialized in repairing glasses, assisting with measurements, and troubleshooting issues for customers. My role also involved handling insurance processes and managing clerical tasks like inputting data for orders. (Couldn't find a picture of me working at Warby so my friend made an edited picture)",
+        "description": "Collaborated closely with optical team to provide quality service. I specialized in repairing glasses, assisting with measurements, and troubleshooting issues for customers. My role also involved handling insurance processes and managing clerical tasks like inputting data for orders. (I couldn't find a picture of me working at Warby so my friend made an edited picture)",
         "position": "Licensed Optician",
         "date": "Mar 2019 - Oct 2019",
         "picture": warby
@@ -67,6 +68,7 @@ const Carousel = () => {
 
     return (
         <div className='carouselContainer'>
+            <BsArrowLeftSquare className='carouselButton' onClick={left} size={54}/>
             <div className='carousel'>
                 {
                     data.map((item,index) => {
@@ -78,16 +80,13 @@ const Carousel = () => {
                                     <p className='carouselPosition'>{item["position"]}</p>
                                     <p className='carouselDescription'>{item["description"]}</p>
                                 </div>
-                                <img src={item["picture"]} alt="" />
+                                <img src={item["picture"]} alt="Me at my pervious jobs or a logo"/>
                             </div>
                         )
                     })
                 }
             </div>
-            <div className='carouselButtons'>
-                <BsFillCaretLeftFill className='carouselButton' onClick={left} size={54}/>
-                <BsFillCaretRightFill className='carouselButton' onClick={right} size={54}/>
-            </div>
+            <BsArrowRightSquare className='carouselButton' onClick={right} size={54}/>
         </div>
     )
 }

@@ -3,9 +3,9 @@
 .carouselContainer {
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.6rem;
 }
 
 .carousel {
@@ -16,6 +16,8 @@
     max-width: 100%;
     width: 70rem;
     border-radius: 0.8rem;
+    border: 2px solid #ced4da;
+    transition: 0.5s;
 }
 
 .carouselItem {
@@ -25,14 +27,13 @@
     display: flex;
     justify-content: space-between;
     transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-    background-color: #ced4da;
     font-size: 3.2rem;
+    color: #ced4da;
 }
 
-.carouselButtons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.carousel:hover {
+    border: 2px solid #fd7e14;
+    transition: 0.5s;
 }
 
 .carouselButton {
@@ -48,12 +49,10 @@
 
 .carouselItem img {
     width: 35rem;
-    /* min-width: 30rem; */
     height: 100%;
 }
 
 .carouselLeft {
-    background-color: #ced4da;
     width: 80rem;
     display: flex;
     flex-direction: column;
@@ -63,7 +62,6 @@
 }
 
 .carouselTitle {
-    background-color: #ced4da;
     flex: 1;
     color: #fd7e14;
     font-size: 2.4rem;
@@ -72,23 +70,18 @@
 }
 
 .carouselDate {
-    background-color: #ced4da;
-    color: #212529;
+    color: #fd7e14;
     flex: 1;
     font-size: 1.6rem;
     font-style: italic;
 }
 
 .carouselPosition {
-    background-color: #ced4da;
     flex: 1;
-    color: #fd7e14;
     font-size: 2rem;
 }
 
 .carouselDescription {
-    background-color: #ced4da;
-    color: #212529;
     font-size: 1.6rem;
     flex: 5;
 }

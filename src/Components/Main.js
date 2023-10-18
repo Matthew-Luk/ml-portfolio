@@ -6,7 +6,7 @@ import Carousel from './Carousel';
 
 const Main = () => {
 
-    const emailHandler = (e) => {
+    const emailHandler = () => {
         window.location = 'mailto:matthew.luk@yahoo.com'
     }
 
@@ -20,7 +20,7 @@ const Main = () => {
     }
 
     return (
-        <div className='main'>
+        <div className='main' id='main'>
             <div className='header'>
                 <p>Hello, my name is</p>
                 <p>Matthew Luk</p>

@@ -14,6 +14,22 @@
 /* color: #fd7e14; */
 /* color: #ced4da; */
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        position: relative;
+        top: -1.6rem;
+    }
+    to {
+        position: relative;
+        top: 0;
+    }
+}
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -32,6 +48,7 @@
     justify-content: flex-start;
     margin: 0rem 22rem;
     width: 100%;
+    animation: fadeIn 2s linear;
 }
 
 /*******************/
@@ -50,23 +67,27 @@
 
 .header p:nth-child(1) {
     color: #fd7e14;
+    animation: fadeUp 1s linear;
 }
 
 .header p:nth-child(2) {
     font-size: 5.2rem;
     font-weight: 600;
+    animation: fadeUp 1s linear;
 }
 
 .header p:nth-child(3) {
     color: #fd7e14;
     font-size: 3.2rem;
     font-weight: 600;
+    animation: fadeUp 1s linear;
 }
 
 .header p:nth-child(4) {
     max-width: 60rem;
     min-width: 20rem;
     line-height: 2.8rem;
+    animation: fadeUp 1s linear;
 }
 
 .sectionHeader {
