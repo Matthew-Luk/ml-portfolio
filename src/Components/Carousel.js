@@ -68,7 +68,7 @@ const Carousel = () => {
 
     return (
         <div className='carouselContainer'>
-            <BsArrowLeftSquare className='carouselButton' onClick={left} size={54}/>
+            <BsArrowLeftSquare className='carouselButton' onClick={left} size={"5.4rem"}/>
             <div className='carousel'>
                 {
                     data.map((item,index) => {
@@ -86,7 +86,7 @@ const Carousel = () => {
                     })
                 }
             </div>
-            <BsArrowRightSquare className='carouselButton' onClick={right} size={54}/>
+            <BsArrowRightSquare className='carouselButton' onClick={right} size={"5.4rem"}/>
         </div>
     )
 }

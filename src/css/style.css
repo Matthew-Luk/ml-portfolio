@@ -10,10 +10,6 @@
 /* - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
-/* color: #212529; */
-/* color: #fd7e14; */
-/* color: #ced4da; */
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -31,8 +27,8 @@
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     color: #ced4da;
     font-size: 1.6rem;
@@ -46,8 +42,8 @@
 .main {
     font-family: "Montserrat";
     justify-content: flex-start;
-    margin: 0rem 22rem;
-    width: 100%;
+    margin: 0rem auto;
+    width: 70%;
     animation: fadeIn 2s linear;
 }
 
@@ -124,10 +120,24 @@
     padding-top: 10rem;
 }
 
+.aboutContent {
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: row;
+}
+
 .aboutContent p {
-    width: 70%;
+    flex: 7;
     line-height: 2.8rem;
     color: #ced4da;
+}
+
+.portrait {
+    align-self: center;
+    flex: 3;
+    border: 2px solid #fd7e14;
+    border-radius: 0.8rem;
+    width: 12rem;
 }
 
 /*******************/
@@ -144,6 +154,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.6rem;
 }
 
 /*******************/
@@ -154,13 +165,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: inherit;
     height: auto;
     padding-top: 10rem;
-}
-
-.experienceContent {
-    width: 100rem;
 }
 
 /*******************/
@@ -168,9 +174,9 @@
 /*******************/
 
 .contact {
-    height: auto;
     padding-top: 10rem;
-    height: 32rem;
+    height: auto;
+    margin-bottom: 4.8rem;
 }
 
 .contactContent {
@@ -179,18 +185,109 @@
     justify-content: space-between;
 }
 
+.contactContent p {
+    margin-right: 1.6rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.linkButton {
+    display: none;
+}
+
 /*******************/
 /* FOOTER */
 /*******************/
 
 .footer {
+    height: auto;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     padding-bottom: 1.6rem;
+    text-align: center;
 }
 
 .credit {
     text-decoration: none;
     color: #ced4da;
+}
+
+/*******************/
+/* MEDIA QUERIES */
+/*******************/
+
+@media (max-width: 1350px) {
+    .projectsContent {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1150px) {
+    .aboutContent {
+        flex-direction: column;
+    }
+
+    .portrait {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 56.5%;
+    }
+
+    .projectsContent {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 787px) {
+    .contactContent {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .linkButton {
+        display: block;
+    }
+
+    .buttons {
+        margin-top: 1.6rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .sectionHeader {
+        width: 100%;
+    }
+
+    .sectionHeader:after {
+        width: 100%;
+    }
+
+    .aboutContent p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .main {
+        width: 80%;
+    }
+
+    .contact {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
 }

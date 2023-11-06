@@ -48,8 +48,7 @@
 }
 
 .carouselItem img {
-    width: 35rem;
-    height: 100%;
+    width: auto;
 }
 
 .carouselLeft {
@@ -82,6 +81,50 @@
 }
 
 .carouselDescription {
-    font-size: 1.6rem;
     flex: 5;
+    font-size: 1.6rem;
+}
+
+/*******************/
+/* MEDIA QUERIES */
+/*******************/
+
+@media (max-width: 1115px) {
+    .carousel {
+        height: 33rem;
+    }
+
+    .carouselItem img {
+        width: 27rem;
+    }
+}
+
+@media (max-width: 1074px) {
+    .carousel {
+        height: 34rem;
+    }
+
+    .carouselItem img {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 1052px) {
+    .carousel {
+        height: 36rem;
+    }
+
+    .carouselItem img {
+        width: 24rem;
+    }
+}
+
+@media (max-width: 989px) {
+    .carousel {
+        height: auto;
+    }
+
+    .carouselItem img {
+        display: none;
+    }
 }

@@ -25,8 +25,8 @@ const Project = (props) => {
                     {projectIcon}
                 </div>
                 <div className='projectHeaderRight'>
-                    <a href={projectGitHub}><LuGithub size={24}/></a>
-                    <a href={projectLink}><LuExternalLink size={24}/></a>
+                    <a href={projectGitHub} target="_blank" rel="noreferrer"><LuGithub size={"2.4rem"}/></a>
+                    <a href={projectLink} target="_blank" rel="noreferrer"><LuExternalLink size={"2.4rem"}/></a>
                 </div>
             </div>
             <div className='projectContent'>

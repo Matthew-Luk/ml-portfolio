@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import { useState, useEffect } from 'react';
 import PacmanLoader from "react-spinners/PacmanLoader";

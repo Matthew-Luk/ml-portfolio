@@ -2,7 +2,11 @@ import React from 'react'
 import Project from './Project'
 import '../css/style.css'
 import { ImYoutube2 } from 'react-icons/im';
+import portrait from '../images/portrait.jpg';
 import Carousel from './Carousel';
+import { Link } from 'react-router-dom'
+import { BsLinkedin } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
 
 const Main = () => {
 
@@ -49,6 +53,7 @@ const Main = () => {
                         estate. Eager to contribute my skills and passion to the ever-evolving landscape of software engineering, 
                         I am committed to pushing boundaries and crafting solutions that make a meaningful impact.
                     </p>
+                    <img src={portrait} className='portrait' alt="me in Hawaii" />
                 </div>
             </div>
             <div className='projects' id='projects'>
@@ -67,11 +72,19 @@ const Main = () => {
                 <p className='sectionHeader'><span>04.</span>Contact</p>
                 <div className='contactContent'>
                     <p>I am currently looking for work so please feel free to message me with any opportunities or just say hi!</p>
-                    <button onClick={emailHandler} className='button'>Email</button>
+                    <div className='buttons'>
+                        <Link className='linkButton' to='https://www.linkedin.com/in/matthew-luk95/' target='_blank'>
+                            <BsLinkedin color='#fd7e14' size={"4.8rem"}/>
+                        </Link>
+                        <Link className='linkButton' to='https://github.com/Matthew-Luk' target='_blank'>
+                            <BsGithub color='#fd7e14' size={"4.8rem"}/>
+                        </Link>
+                        <button onClick={emailHandler} className='button'>Email</button>
+                    </div>
                 </div>
             </div>
             <div className='footer'>
-                <p>Built by Matthew Luk and Design was heavily influenced by Brittany Chiang @ <span><a className='credit' href='https://brittanychiang.com'>https://brittanychiang.com</a></span></p>
+                <p>Built by Matthew Luk and Design was heavily influenced by Brittany Chiang @ <span><a className='credit' href='https://brittanychiang.com' target="_blank" rel="noreferrer">https://brittanychiang.com</a></span></p>
             </div>
         </div>
     )

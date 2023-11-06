@@ -5,7 +5,6 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
 
-
 const SideNavbar = () => {
 
     const emailHandler = (e) => {
@@ -14,10 +13,10 @@ const SideNavbar = () => {
 
     return (
         <div className='sideNavbar'>
-            <Link to='https://www.linkedin.com/in/matthew-luk95/'>
+            <Link to='https://www.linkedin.com/in/matthew-luk95/' target='_blank'>
                 <BsLinkedin color='#fd7e14' size={32}/>
             </Link>
-            <Link to='https://github.com/Matthew-Luk'>
+            <Link to='https://github.com/Matthew-Luk' target='_blank'>
                 <BsGithub color='#fd7e14' size={32}/>
             </Link>
             <Link onClick={emailHandler}>
