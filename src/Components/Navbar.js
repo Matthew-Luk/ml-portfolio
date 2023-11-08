@@ -6,7 +6,7 @@ import { RiArrowDropDownFill } from 'react-icons/ri';
 const Navbar = () => {
 
     const resumeHandler = () => {
-        window.location = ("https://drive.google.com/file/d/1CSQXEqGwKEp8p1Uc-cvuU60xpYNKQ-_z/view?usp=sharing", "_blank")
+        window.open("https://drive.google.com/file/d/1CSQXEqGwKEp8p1Uc-cvuU60xpYNKQ-_z/view?usp=sharing", "_blank")
     }
 
     return (

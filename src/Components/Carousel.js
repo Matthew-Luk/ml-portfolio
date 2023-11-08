@@ -87,6 +87,10 @@ const Carousel = () => {
                 }
             </div>
             <BsArrowRightSquare className='carouselButton' onClick={right} size={"5.4rem"}/>
+            <div className='queryCarouselButtons'>
+                <BsArrowLeftSquare className='queryCarouselButton' onClick={left} size={"5.4rem"}/>
+                <BsArrowRightSquare className='queryCarouselButton' onClick={right} size={"5.4rem"}/>
+            </div>
         </div>
     )
 }

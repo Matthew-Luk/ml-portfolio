@@ -15,7 +15,7 @@ const Main = () => {
     }
 
     const youtubeData = {
-        "icon": <ImYoutube2 color='#fd7e14' size={48}/>,
+        "icon": <ImYoutube2 color='#fd7e14' size={"4.8rem"}/>,
         "github" : "https://github.com/Matthew-Luk/youtube",
         "link" : "https://ml-youtube.netlify.app",
         "title": "YouTube Clone",
