@@ -105,7 +105,7 @@
 /* MEDIA QUERIES */
 /*******************/
 
-@media (max-width: 1115px) {
+@media (max-width: 69.6875em) {
     .carousel {
         height: 33rem;
     }
@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 1074px) {
+@media (max-width: 67.125em) {
     .carousel {
         height: 34rem;
     }
@@ -125,7 +125,7 @@
     }
 }
 
-@media (max-width: 1052px) {
+@media (max-width: 65.75em) {
     .carousel {
         height: 36rem;
     }
@@ -135,7 +135,7 @@
     }
 }
 
-@media (max-width: 989px) {
+@media (max-width: 61.8125em) {
     .carousel {
         height: auto;
     }
@@ -145,7 +145,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75em) {
     .carouselContainer {
         flex-direction: column;
     }

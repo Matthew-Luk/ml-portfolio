@@ -54,7 +54,7 @@
 /* MEDIA QUERIES */
 /*******************/
 
-@media (max-width: 300px) {
+@media (max-width: 18.75em) {
     .project {
         width: 100%;
     }

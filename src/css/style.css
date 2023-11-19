@@ -221,13 +221,13 @@
 /* MEDIA QUERIES */
 /*******************/
 
-@media (max-width: 1350px) {
+@media (max-width: 84.375em) {
     .projectsContent {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 71.875em) {
     .aboutContent {
         flex-direction: column;
     }
@@ -237,7 +237,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25em) {
     html {
         font-size: 56.5%;
     }
@@ -247,7 +247,7 @@
     }
 }
 
-@media (max-width: 787px) {
+@media (max-width: 49.1875em) {
     .contactContent {
         flex-direction: column;
         gap: 1.2rem;
@@ -262,7 +262,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 33.75em) {
     .sectionHeader {
         width: 100%;
     }
@@ -276,7 +276,7 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 26.875em) {
     .main {
         width: 80%;
     }
@@ -286,7 +286,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23.4375em) {
     html {
         font-size: 50%;
     }
