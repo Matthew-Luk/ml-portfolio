@@ -7,6 +7,8 @@ import Carousel from './Carousel';
 import { Link } from 'react-router-dom'
 import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
+import { PiLockKeyFill } from "react-icons/pi";
+
 
 const Main = () => {
 
@@ -21,6 +23,15 @@ const Main = () => {
         "title": "YouTube Clone",
         "content": "A YouTube clone that I created, there are some restrictions due to max call quota and you need your own Youtube Data API key.",
         "footer": ["React","YouTube Data API","CSS"]
+    }
+
+    const passwordData = {
+        "icon": <PiLockKeyFill color='#fd7e14' size={"3.6rem"}/>,
+        "github" : "https://github.com/Matthew-Luk/password_generator",
+        "link" : "https://ml-passwordgenerator.netlify.app/",
+        "title": "Password Generator",
+        "content": "Random password generator, takes parameters or you can generate an Apple style strong password.",
+        "footer": ["React","CSS"]
     }
 
     return (
@@ -60,6 +71,7 @@ const Main = () => {
                 <p className='sectionHeader'><span>02.</span>Projects</p>
                 <div className='projectsContent'>
                     <Project projectIcon={youtubeData["icon"]} projectGitHub={youtubeData["github"]} projectLink={youtubeData["link"]} projectTitle={youtubeData["title"]} projectContent={youtubeData["content"]} projectFooter={youtubeData["footer"]}/>
+                    <Project projectIcon={passwordData["icon"]} projectGitHub={passwordData["github"]} projectLink={passwordData["link"]} projectTitle={passwordData["title"]} projectContent={passwordData["content"]} projectFooter={passwordData["footer"]}/>
                 </div>
             </div>
             <div className='experience' id='experience'>
