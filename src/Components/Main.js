@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
 import { PiLockKeyFill } from "react-icons/pi";
+import { TiWeatherCloudy } from "react-icons/ti";
 
 
 const Main = () => {
@@ -32,6 +33,15 @@ const Main = () => {
         "title": "Password Generator",
         "content": "Random password generator, takes parameters or you can generate an Apple style strong password.",
         "footer": ["React","CSS"]
+    }
+
+    const weatherData = {
+        "icon": <TiWeatherCloudy color='#fd7e14' size={"4rem"}/>,
+        "github" : "https://github.com/Matthew-Luk/weather",
+        "link" : "https://ml-weather.netlify.app/",
+        "title": "Weather App",
+        "content": "Weather app using an API from WeatherAPI.com, can take parameters such as city, zip code, or IP address.",
+        "footer": ["React","SCSS","Weather API"]
     }
 
     return (
@@ -72,6 +82,7 @@ const Main = () => {
                 <div className='projectsContent'>
                     <Project projectIcon={youtubeData["icon"]} projectGitHub={youtubeData["github"]} projectLink={youtubeData["link"]} projectTitle={youtubeData["title"]} projectContent={youtubeData["content"]} projectFooter={youtubeData["footer"]}/>
                     <Project projectIcon={passwordData["icon"]} projectGitHub={passwordData["github"]} projectLink={passwordData["link"]} projectTitle={passwordData["title"]} projectContent={passwordData["content"]} projectFooter={passwordData["footer"]}/>
+                    <Project projectIcon={weatherData["icon"]} projectGitHub={weatherData["github"]} projectLink={weatherData["link"]} projectTitle={weatherData["title"]} projectContent={weatherData["content"]} projectFooter={weatherData["footer"]}/>
                 </div>
             </div>
             <div className='experience' id='experience'>
