@@ -5,6 +5,8 @@
     border-radius: 0.8rem;
     padding: 1.2rem;
     color: #ced4da;
+    display: flex;
+    flex-direction: column;
 }
 
 .project:hover {
@@ -45,7 +47,8 @@
 }
 
 .projectFooter {
-    margin-top: 1.6rem;
+    margin-top: auto;
+    margin-bottom: 0.2rem;
     display: flex;
     font-size: 1.2rem;
 }
