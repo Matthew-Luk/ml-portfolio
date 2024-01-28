@@ -145,6 +145,17 @@
     }
 }
 
+@media (max-width: 49.1875em) {
+    .carousel:hover {
+        border: 2px solid #ced4da;
+        transition: none;
+    }
+
+    .carouselButton:hover {
+        color: #ced4da;
+    }
+}
+
 @media (max-width: 43.75em) {
     .carouselContainer {
         flex-direction: column;

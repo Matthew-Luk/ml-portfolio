@@ -101,9 +101,9 @@
     border-radius: 0.8rem;
 }
 
-.dropdown:hover .dropdownContent {
+/* .dropdown:hover .dropdownContent {
     display: block;
-}
+} */
 
 .dropdownLink {
     font-family: "Press Start 2P";
@@ -122,6 +122,14 @@
 .dropdownLink:hover {
     color: #fd7e14;
     transition: 0.3s;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.openDisplay {
+    display: block;
 }
 
 /*******************/

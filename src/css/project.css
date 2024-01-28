@@ -57,6 +57,25 @@
 /* MEDIA QUERIES */
 /*******************/
 
+
+@media (max-width: 49.1875em) {
+    .project:hover {
+        transform: none;
+        box-shadow: none;
+        transition: none;
+    }
+
+    .projectHeaderRight a:link, .projectHeaderRight a:visited {
+        color: #ced4da;
+        transition: none;
+    }
+    
+    .projectHeaderRight a:hover, .projectHeaderRight a:active {
+        color: #ced4da;
+        transition: none;
+    }
+}
+
 @media (max-width: 18.75em) {
     .project {
         width: 100%;
