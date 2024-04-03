@@ -18,8 +18,12 @@ const Project = (props) => {
         return str
     }
 
+    const projectHandler = (projectLink) => {
+        console.log(projectLink)
+    }
+
     return (
-        <div className='project'>
+        <div className='project' onClick={projectHandler}>
             <div className='projectHeader'>
                 <div className='projectHeaderLeft'>
                     {projectIcon}

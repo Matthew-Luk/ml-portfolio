@@ -260,6 +260,12 @@
     .buttons {
         margin-top: 1.6rem;
     }
+
+    .button:hover {
+        transform: none;
+        box-shadow: none;
+        transition: none;
+    }
 }
 
 @media (max-width: 33.75em) {

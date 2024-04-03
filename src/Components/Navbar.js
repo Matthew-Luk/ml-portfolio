@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../css/navbar.css'
 import { TbSquareLetterM } from 'react-icons/tb';
 import { RiArrowDropDownFill } from 'react-icons/ri';
+import PDF1 from '../images/resume.pdf';
 
 const Navbar = () => {
     const [open,setOpen] = useState(true)
@@ -16,7 +17,7 @@ const Navbar = () => {
     }
 
     const resumeHandler = () => {
-        window.open("https://drive.google.com/file/d/1CSQXEqGwKEp8p1Uc-cvuU60xpYNKQ-_z/view?usp=sharing", "_blank")
+        window.open(PDF1, "_blank", "noreferrer")
     }
 
     const scrollToTop = () => {
@@ -35,15 +36,14 @@ const Navbar = () => {
                 <a href="#contact" className='navbarLink'><span>04.</span>Contact</a>
                 <button className='button' onClick={resumeHandler}>Resume</button>
             </div>
-            <div class="dropdown">
+            <div className="dropdown">
                 <button className="dropdownButton" onClick={dropdownClose}>Menu<RiArrowDropDownFill color='#fd7e14' size={24}/></button>
-                {/* <div className="dropdownContent"> */}
                 <div className={`dropdownContent ${open ? "noDisplay":"openDisplay"}`}>
                     <a href="#about" className='dropdownLink'><span>01.</span>About</a>
                     <a href="#projects" className='dropdownLink'><span>02.</span>Projects</a>
                     <a href="#experience" className='dropdownLink'><span>03.</span>Experience</a>
                     <a href="#contact" className='dropdownLink'><span>04.</span>Contact</a>
-                    <a href="https://drive.google.com/file/d/1CSQXEqGwKEp8p1Uc-cvuU60xpYNKQ-_z/view" target="_blank" rel="noreferrer" className='dropdownLink'><span>05.</span>Resume</a>
+                    <a href={PDF1} target="_blank" rel="noreferrer" className='dropdownLink'><span>05.</span>Resume</a>
                 </div>
             </div>
         </div>

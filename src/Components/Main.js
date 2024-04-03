@@ -9,7 +9,7 @@ import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
 import { PiLockKeyFill } from "react-icons/pi";
 import { TiWeatherCloudy } from "react-icons/ti";
-
+import { PiHamburgerBold } from "react-icons/pi";
 
 const Main = () => {
 
@@ -42,6 +42,15 @@ const Main = () => {
         "title": "Weather App",
         "content": "Weather app using an API from WeatherAPI.com, can take parameters such as city, zip code, or IP address.",
         "footer": ["React","SCSS","Weather API"]
+    }
+
+    const foodData = {
+        "icon": <PiHamburgerBold color='#fd7e14' size={"4rem"}/>,
+        "github" : "https://github.com/Matthew-Luk/food_picker",
+        "link" : "https://ml-foodpicker.netlify.app/",
+        "title": "Food Picker",
+        "content": "An app I made for my girlfriend to help her pick what she should eat for dinner.",
+        "footer": ["React","SCSS"]
     }
 
     return (
@@ -83,6 +92,7 @@ const Main = () => {
                     <Project projectIcon={youtubeData["icon"]} projectGitHub={youtubeData["github"]} projectLink={youtubeData["link"]} projectTitle={youtubeData["title"]} projectContent={youtubeData["content"]} projectFooter={youtubeData["footer"]}/>
                     <Project projectIcon={passwordData["icon"]} projectGitHub={passwordData["github"]} projectLink={passwordData["link"]} projectTitle={passwordData["title"]} projectContent={passwordData["content"]} projectFooter={passwordData["footer"]}/>
                     <Project projectIcon={weatherData["icon"]} projectGitHub={weatherData["github"]} projectLink={weatherData["link"]} projectTitle={weatherData["title"]} projectContent={weatherData["content"]} projectFooter={weatherData["footer"]}/>
+                    <Project projectIcon={foodData["icon"]} projectGitHub={foodData["github"]} projectLink={foodData["link"]} projectTitle={foodData["title"]} projectContent={foodData["content"]} projectFooter={foodData["footer"]}/>
                 </div>
             </div>
             <div className='experience' id='experience'>
