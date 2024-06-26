@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { BsLinkedin } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
 import { PiLockKeyFill } from "react-icons/pi";
-import { TiWeatherCloudy } from "react-icons/ti";
+import { TbPokeball } from "react-icons/tb";
 import { PiHamburgerBold } from "react-icons/pi";
 
 const Main = () => {
@@ -35,13 +35,13 @@ const Main = () => {
         "footer": ["React","CSS"]
     }
 
-    const weatherData = {
-        "icon": <TiWeatherCloudy color='#fd7e14' size={"4rem"}/>,
-        "github" : "https://github.com/Matthew-Luk/weather",
-        "link" : "https://ml-weather.netlify.app/",
-        "title": "Weather App",
-        "content": "Weather app using an API from WeatherAPI.com, can take parameters such as city, zip code, or IP address.",
-        "footer": ["React","SCSS","Weather API"]
+    const pokemonData = {
+        "icon": <TbPokeball color='#fd7e14' size={"4rem"}/>,
+        "github" : "https://github.com/Matthew-Luk/pokedex",
+        "link" : "https://mlpokedex.netlify.app/",
+        "title": "Pokédex",
+        "content": "I created a pokédex using the Poké API where you can search by the pokémons name or ID as well as looking at specific information for the pokémon.",
+        "footer": ["React","SCSS","Poké API"]
     }
 
     const foodData = {
@@ -91,7 +91,7 @@ const Main = () => {
                 <div className='projectsContent'>
                     <Project projectIcon={youtubeData["icon"]} projectGitHub={youtubeData["github"]} projectLink={youtubeData["link"]} projectTitle={youtubeData["title"]} projectContent={youtubeData["content"]} projectFooter={youtubeData["footer"]}/>
                     <Project projectIcon={passwordData["icon"]} projectGitHub={passwordData["github"]} projectLink={passwordData["link"]} projectTitle={passwordData["title"]} projectContent={passwordData["content"]} projectFooter={passwordData["footer"]}/>
-                    <Project projectIcon={weatherData["icon"]} projectGitHub={weatherData["github"]} projectLink={weatherData["link"]} projectTitle={weatherData["title"]} projectContent={weatherData["content"]} projectFooter={weatherData["footer"]}/>
+                    <Project projectIcon={pokemonData["icon"]} projectGitHub={pokemonData["github"]} projectLink={pokemonData["link"]} projectTitle={pokemonData["title"]} projectContent={pokemonData["content"]} projectFooter={pokemonData["footer"]}/>
                     <Project projectIcon={foodData["icon"]} projectGitHub={foodData["github"]} projectLink={foodData["link"]} projectTitle={foodData["title"]} projectContent={foodData["content"]} projectFooter={foodData["footer"]}/>
                 </div>
             </div>
